@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { IoIosCart } from "react-icons/io";
 
 const CartItem = () => {
   return (
-    <div>CartItem</div>
-  )
-}
+    <>
+      <IoIosCart size={60} />
+    </>
+  );
+};
 
-export default CartItem
+export default CartItem;
