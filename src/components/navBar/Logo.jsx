@@ -5,10 +5,9 @@ import logo from "../../assets/Logo/logo3.jpg";
 const Logo = () => {
   return (
     <HStack>
-      <Image src={logo} boxSize={100} objectFit="cover" p={(10, 10)} />
+      <Image src={logo} boxSize={60} objectFit="cover" />
       <Text as="b" fontFamily={"sans-serif"}>
-        {" "}
-        Kidame Gebeya{" "}
+        Kidame Gebeya
       </Text>
     </HStack>
   );

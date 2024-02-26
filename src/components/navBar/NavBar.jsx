@@ -8,11 +8,17 @@ import SearchItem from "./SearchItem";
 
 const NavBar = () => {
   return (
-    <Box>
-      <HStack justifyContent="space-between" alignContent="flex-start">
+    <Box
+      bg="#6a6a6a"
+      position="fixed"
+      zIndex={5}
+      width={"100%"}
+      paddingBottom="3px"
+    >
+      <HStack justifyContent="space-Between">
         <Logo />
-        <SearchItem />
         <NavLink />
+        <SearchItem />
         <CartIcon />
       </HStack>
     </Box>

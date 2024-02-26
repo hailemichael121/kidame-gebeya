@@ -5,7 +5,7 @@ import { IoIosCart } from "react-icons/io";
 const CartIcon = () => {
   return (
     <>
-      <Box paddingRight="100px">
+      <Box>
         <IoIosCart size={60} />
       </Box>
     </>

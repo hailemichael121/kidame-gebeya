@@ -1,13 +1,22 @@
-import React from "react";
-import { Link } from "@chakra-ui/react";
+import { Link, Box } from "@chakra-ui/react";
 
 const NavLink = () => {
   return (
     <>
-      <Link href="">Home</Link>
-      <Link href="">Categories</Link>
-      <Link href="">Shops</Link>
-      <Link href="">Contact Us</Link>
+      <Box>
+        <Link href="" padding={10}>
+          Home
+        </Link>
+        <Link href="" padding={10}>
+          Categories
+        </Link>
+        <Link href="" padding={10}>
+          Shops
+        </Link>
+        <Link href="" padding={10}>
+          Contact Us
+        </Link>
+      </Box>
     </>
   );
 };

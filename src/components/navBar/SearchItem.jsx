@@ -1,18 +1,22 @@
-import { InputGroup, Input, InputLeftAddon } from "@chakra-ui/react";
-import { LuSearch } from "react-icons/lu";
+import { InputGroup, Input, Stack, InputRightAddon } from "@chakra-ui/react";
+import { FaSearch } from "react-icons/fa";
 
 const SearchItem = () => {
   return (
-    <InputGroup>
-      <InputLeftAddon>
-        <LuSearch />
-      </InputLeftAddon>
-      <Input
-        borderRadius={25}
-        placeholder="Search Items..."
-        variant={"filled"}
-      />
-    </InputGroup>
+    <Stack spacing={10} alignSelf="center" justifyContent="space-around">
+      <InputGroup>
+        <Input
+          borderRadius={2}
+          bgColor="AppWorkspace"
+          type="Search"
+          placeholder=" Search Items ..."
+          focusBorderColor="dark"
+        />
+        <InputRightAddon>
+          <FaSearch />
+        </InputRightAddon>
+      </InputGroup>
+    </Stack>
   );
 };
 
