@@ -6,7 +6,10 @@ const Logo = () => {
   return (
     <HStack>
       <Image src={logo} boxSize={100} objectFit="cover" p={(10, 10)} />
-      <Text as="b"> Kidame Gebeya </Text>
+      <Text as="b" fontFamily={"sans-serif"}>
+        {" "}
+        Kidame Gebeya{" "}
+      </Text>
     </HStack>
   );
 };

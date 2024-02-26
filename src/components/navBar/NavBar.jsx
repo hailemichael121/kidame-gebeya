@@ -2,15 +2,17 @@ import { HStack, Box } from "@chakra-ui/react";
 
 import CartIcon from "../button/CartIcon";
 import Logo from "./Logo";
-import NavBarLink from "./NavBarLink";
+import NavLink from "./NavLink";
 import "./navBar.css";
+import SearchItem from "./SearchItem";
 
 const NavBar = () => {
   return (
     <Box>
       <HStack justifyContent="space-between" alignContent="flex-start">
         <Logo />
-        <NavBarLink />
+        <SearchItem />
+        <NavLink />
         <CartIcon />
       </HStack>
     </Box>
