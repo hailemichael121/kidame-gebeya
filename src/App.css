@@ -1,11 +1,10 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: rgb(201, 31, 31);
-    /* background: linear-gradient(13deg, rgba(201, 31, 31, 1) 0%, rgba(214, 120, 24, 1) 34%, rgba(196, 90, 18, 1) 94%);
- */}
+  background: var(--gradient-bar);
+}

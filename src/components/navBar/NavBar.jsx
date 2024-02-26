@@ -1,17 +1,16 @@
-import { HStack, Image, VStack, Text, Box } from "@chakra-ui/react";
+import { HStack, Box } from "@chakra-ui/react";
 
-import logo from "../../assets/Logo/logo2.jpg";
-import cartIcon from "../index";
+import CartIcon from "../button/CartIcon";
 import Logo from "./Logo";
+import NavBarLink from "./NavBarLink";
+import "./navBar.css";
 
 const NavBar = () => {
   return (
-    <Box position="sticky" top="0" zIndex="10" bg={"#141230"} height={40}>
-      <HStack padding="50px" justifyContent="space-between" height={30}>
+    <Box>
+      <HStack justifyContent="space-between" alignContent="flex-start">
         <Logo />
-        <Text fontSize="6xl" fontFamily={"sans-serif"} fontWeight={"xl"}>
-          Kidame Gebeya{" "}
-        </Text>
+        <NavBarLink />
         <CartIcon />
       </HStack>
     </Box>

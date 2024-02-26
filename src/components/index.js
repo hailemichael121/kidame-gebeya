@@ -4,3 +4,7 @@ export { default as Header } from "./header/Header";
 export { default as ItemGrid } from "./item/ItemGrid";
 export { default as NavBar } from "./navBar/NavBar";
 export { default as Categories } from "./categories/Categories";
+export { default as ItemImage } from "../components/item/ItemImage";
+export { default as ItemTxt } from "../components/item/ItemTxt";
+export { default as BuyNowBtn } from "../components/button/BuyNowBtn";
+export { default as AddToCartBtn } from "../components/button/AddToCartBtn";

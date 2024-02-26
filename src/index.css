@@ -1,14 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 :root {
-    --font-family: 'Manrope', sans-serif;
+  --font-family: "Manrope", sans-serif;
 
-    --gradient-text:linear-gradient(13deg, rgba(201, 31, 31, 1) 0%, rgba(214, 120, 24, 1) 34%, rgba(196, 90, 18, 1) 104%);
-    --gradient-bar: linear-gradient(13deg, rgba(201, 31, 31, 1) 0%, rgba(214, 120, 24, 1) 34%, rgba(196, 90, 18, 1) 94%);
+  --gradient-text: linear-gradient(
+    13deg,
+    rgba(201, 31, 31, 1) 0%,
+    rgba(214, 120, 24, 1) 34%,
+    rgba(196, 90, 18, 1) 104%
+  );
+  --gradient-bar: linear-gradient(
+    13deg,
+    rgba(187, 38, 28, 1) 13%,
+    rgba(124, 69, 13, 1) 44%,
+    rgba(196, 90, 18, 1) 53%,
+    rgba(201, 31, 31, 1) 56%,
+    rgba(156, 53, 20, 1) 72%
+  );
 
-    --color-bg: #b3710f;
-    --color-footer: #163453;
-    --color-blog: #042c54;
-    --color-text: #beccda;
-    --color-subtext: #FF8A71;
+  --color-bg: #815a1e;
+  --color-footer: #163453;
+  --color-blog: #042c54;
+  --color-text: #beccda;
+  --color-subtext: #ff8a71;
 }

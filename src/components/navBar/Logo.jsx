@@ -1,13 +1,13 @@
 import React from "react";
-import { Image, VStack, Text } from "@chakra-ui/react";
+import { Image, HStack, Text } from "@chakra-ui/react";
 
-import logo from "../../assets/Logo/logo2.jpg";
+import logo from "../../assets/Logo/logo3.jpg";
 const Logo = () => {
   return (
-    <VStack height={35}>
-      <Image src={logo} boxSize="80px" />
-      <Text> ቅዳሜ ገበያ </Text>
-    </VStack>
+    <HStack>
+      <Image src={logo} boxSize={100} objectFit="cover" p={(10, 10)} />
+      <Text as="b"> Kidame Gebeya </Text>
+    </HStack>
   );
 };
 

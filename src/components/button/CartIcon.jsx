@@ -1,12 +1,15 @@
+import { Box } from "@chakra-ui/react";
 import React from "react";
 import { IoIosCart } from "react-icons/io";
 
-const CartItem = () => {
+const CartIcon = () => {
   return (
     <>
-      <IoIosCart size={60} />
+      <Box paddingRight="100px">
+        <IoIosCart size={60} />
+      </Box>
     </>
   );
 };
 
-export default CartItem;
+export default CartIcon;

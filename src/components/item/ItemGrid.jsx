@@ -6,7 +6,7 @@ const ItemGrid = () => {
   const Items = [1, 2, 3];
   return (
     <>
-      <HStack padding={20} spacing={5}>
+      <HStack padding={20} spacing={5} className="Item_grid">
         {Items.map((item) => (
           <ItemCard key={item} />
         ))}
