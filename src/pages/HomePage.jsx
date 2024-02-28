@@ -10,7 +10,7 @@ const HomePage = () => {
         <Header />
         <ScrollableImageGrid />
       </HStack>
-      <Categories />
+      {/* <Categories /> */}
       <ItemGrid />
     </>
   );

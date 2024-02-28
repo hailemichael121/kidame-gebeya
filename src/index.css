@@ -17,8 +17,4 @@
   --color-text: #beccda;
   --color-subtext: #ff8a71;
 }
-body,
-html {
-  font-family: "manrope", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
+
