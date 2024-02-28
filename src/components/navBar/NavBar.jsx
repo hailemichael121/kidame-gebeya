@@ -4,7 +4,7 @@ import CartIcon from "../button/CartIcon";
 import Logo from "./Logo";
 import NavLink from "./NavLink";
 import "./navBar.css";
-import SearchItem from "./SearchItem";
+import SearchItem from "../SearchItem/SearchItem";
 
 const NavBar = () => {
   return (

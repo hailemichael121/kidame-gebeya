@@ -12,9 +12,7 @@ const SearchItem = () => {
           placeholder=" Search Items ..."
           focusBorderColor="dark"
         />
-        <InputRightAddon>
-          <FaSearch />
-        </InputRightAddon>
+        <InputRightAddon children={<FaSearch />} />
       </InputGroup>
     </Stack>
   );

@@ -9,7 +9,7 @@
     rgba(214, 120, 24, 1) 34%,
     rgba(196, 90, 18, 1) 104%
   );
-  --gradient-bar: radial-gradient(circle at 3% 25%, #253b46 2%, #000000e6 90%);
+  --gradient-bar: radial-gradient(circle at 1% 19%, #54656e 0%, #173f0fe6 100%);
 
   --color-bg: #815a1e;
   --color-footer: #163453;
@@ -19,5 +19,6 @@
 }
 body,
 html {
-  font-family: var(--font-family);
+  font-family: "manrope", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
