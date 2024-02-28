@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { ChakraProvider, LightMode } from "@chakra-ui/react";
+import { Box, ChakraProvider, LightMode } from "@chakra-ui/react";
 
 import "./app.css";
 
@@ -10,8 +10,12 @@ import { NavBar } from "./components";
 function App() {
   return (
     <ChakraProvider theme={LightMode}>
-      <NavBar />
-      <HomePage />
+      <Box>
+        <NavBar />
+      </Box>
+      <Box padding="100px">
+        <HomePage />
+      </Box>
     </ChakraProvider>
   );
 }

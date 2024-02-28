@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Grid, Box, Image, IconButton } from "@chakra-ui/react";
 import { MdNavigateNext, MdArrowBackIosNew } from "react-icons/md";
 
@@ -12,13 +12,24 @@ import image7 from "../../assets/Image7.jpg";
 
 function ScrollableImageGrid() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   const images = [image1, image2, image3, image4, image5, image6, image7];
+  const intervalRef = useRef(null);
+
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000);
+
+    return () => clearInterval(intervalRef.current);
+  }, [images.length]);
+
   const handleNextImage = () => {
+    clearInterval(intervalRef.current); // Clear the interval before manual changes
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const handlePreviousImage = () => {
+    clearInterval(intervalRef.current);
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
@@ -26,31 +37,37 @@ function ScrollableImageGrid() {
 
   return (
     <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={4}>
-      <Box position="relative" justifyContent={"center"} alignItems={"center"}>
+      <Box
+        position="relative"
+        justifyContent="center"
+        alignItems="center"
+        borderRadius="25px"
+        overflow="hidden"
+      >
         <Image
           src={images[currentImageIndex]}
           alt=""
           width="100%"
           height="500px"
-          objectFit={"cover"}
+          objectFit="cover"
         />
         <IconButton
-          icon={<MdNavigateNext />}
+          icon={<MdNavigateNext size="50px" />}
           position="absolute"
           top="50%"
           left="95%"
-          backgroundColor={"chocolate"}
-          transform="translate(-50%, -50%)"
+          backgroundColor="GrayText"
+          transform="translate(-50%, -70%)"
           onClick={handleNextImage}
         />
         <IconButton
-          icon={<MdArrowBackIosNew />}
+          icon={<MdArrowBackIosNew size="50px" />}
           position="absolute"
           top="50%"
           left="5%"
+          backgroundColor="GrayText"
           transform="translate(-50%, -50%)"
           onClick={handlePreviousImage}
-          backgroundColor={"chocolate"}
         />
       </Box>
     </Grid>
