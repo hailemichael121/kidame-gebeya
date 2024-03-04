@@ -8,3 +8,5 @@ export { default as ItemImage } from "./item/ItemImage";
 export { default as ItemTxt } from "./item/ItemTxt";
 export { default as BuyNowBtn } from "./button/BuyNowBtn";
 export { default as AddToCartBtn } from "./button/AddToCartBtn";
+export { default as LatestItemDisplay } from "./latestItems/LatestItemDisplay";
+export { default as ProductDisplay } from "./ourProduct/ProductDisplay";

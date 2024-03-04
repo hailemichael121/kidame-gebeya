@@ -1,18 +1,20 @@
 import { Box, Button, Heading } from "@chakra-ui/react";
+import React from "react";
 import LoremIpsum from "react-lorem-ipsum";
 import ItemGrid from "../item/ItemGrid";
 
-const Categories = () => {
+const LatestItemDisplay = () => {
   return (
     <Box textAlign={"center"}>
-      <Heading> Catagories</Heading>
+      <Heading fontWeight={500}> Latest Arival</Heading>
       <LoremIpsum p={1} />
-      <Button size="lg" bg="gray" color="aquamarine" shadow="revert">
-        Catagories
+      <Button fontWeight={300} size={"xl"} bg={"grey"}>
+        {" "}
+        Shop
       </Button>
       <ItemGrid />
     </Box>
   );
 };
 
-export default Categories;
+export default LatestItemDisplay;
