@@ -12,7 +12,7 @@
   --gradient-bar: radial-gradient(circle at 1% 19%, #54656e 0%, #173f0fe6 100%);
 
   --color-bg: #815a1e;
-  --color-footer: #163453;
+  --color-footer: rgba(24, 36, 49, 0.87);
   --color-blog: #042c54;
   --color-text: #beccda;
   --color-subtext: #ff8a71;

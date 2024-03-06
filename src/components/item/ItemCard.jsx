@@ -20,6 +20,7 @@ const ItemCard = () => {
         margin="10px"
         pl="15px"
         pb="15px"
+        boxShadow="dark-lg"
       >
         <CardBody className="Item_card-body">
           <ItemImage />
@@ -27,7 +28,7 @@ const ItemCard = () => {
         </CardBody>
         <Divider />
         <CardFooter className="Item_card-footer">
-          <ButtonGroup spacing="50" className="Item_card-BtnGroup">
+          <ButtonGroup spacing="2">
             <AddToCartBtn />
             <BuyNowBtn />
           </ButtonGroup>

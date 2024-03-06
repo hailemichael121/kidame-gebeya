@@ -1,4 +1,5 @@
 import { Box, Heading } from "@chakra-ui/react";
+import CartItemCard from "./CartItemCard";
 
 const CartItem = () => {
   return (
@@ -9,7 +10,7 @@ const CartItem = () => {
         p={4}
         bg="white"
       >
-        <Heading>Cart Items</Heading>
+        <CartItemCard />
       </Box>
     </>
   );

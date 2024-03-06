@@ -5,7 +5,8 @@ import { ChakraProvider, LightMode } from "@chakra-ui/react";
 
 import "./app.css";
 
-import { HomePage, ShopingPage } from "./pages";
+import { CartPage, HomePage, ShopingPage } from "./pages";
+import CartItem from "./components/cart/CartItem";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/shop" element={<ShopingPage />} />
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
       </BrowserRouter>
     </ChakraProvider>
