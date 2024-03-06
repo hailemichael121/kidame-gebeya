@@ -1,5 +1,10 @@
 import React from "react";
-import { Categories, LatestItemDisplay, ProductDisplay } from "../components";
+import {
+  Categories,
+  Footer,
+  LatestItemDisplay,
+  ProductDisplay,
+} from "../components";
 import ScrollableImageGrid from "../components/scrollableImageGrid/ScrollableImageGrid";
 import { NavBar } from "../components";
 
@@ -11,6 +16,7 @@ const HomePage = () => {
       <Categories />
       <LatestItemDisplay />
       <ProductDisplay />
+      <Footer />
     </>
   );
 };
