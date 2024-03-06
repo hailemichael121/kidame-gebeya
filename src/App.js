@@ -1,21 +1,21 @@
 import * as React from "react";
 
-import { Box, ChakraProvider, LightMode } from "@chakra-ui/react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ChakraProvider, LightMode } from "@chakra-ui/react";
 
 import "./app.css";
 
-import { HomePage } from "./pages";
-import { NavBar } from "./components";
+import { HomePage, ShopingPage } from "./pages";
 
 function App() {
   return (
     <ChakraProvider theme={LightMode}>
-      <Box>
-        <NavBar />
-      </Box>
-      <Box padding="100px">
-        <HomePage />
-      </Box>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/shop" element={<ShopingPage />} />
+        </Routes>
+      </BrowserRouter>
     </ChakraProvider>
   );
 }
